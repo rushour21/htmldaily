@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hero Section - E-Commerce Layout</title>
+        <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .hero-content{
+            height: 450px;
+            z-index: 0;
+        }
+        .hero-image >img {
+            width: 100%;
+            height: 450px;
+            z-index: 0;
+        }
+        .product{
+            background-color: whitesmoke;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            width: 30%;
+            height: 330px;
+        }
+        .pp{
+            width: 100px;
+            height: 180px;
+
+        }
+        .product-section{
+            width: 85%;
+            display: flex;
+            height: 330px;
+            margin-right: 7.5%;
+            margin-left: 7.5%;
+            justify-content:space-between;
+            position: absolute;
+            top: 225px;
+            z-index: 10;
+            padding-right: 30px;
+            padding-left: 30px;
+        }
+        .product{ 
+            box-shadow: 0px 9px 31px rgba(0, 0, 0, 0.4);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        </style>
+    </head>
+    <body>
+
+        <!-- Hero Section -->
+        <div class="hero-content">
+            <div class="hero-image">
+            <img src="1.jpg" alt="OnePlus 11" >
+            </div>
+        </div>
+
+        <!-- Product Section -->
+        <section class="product-section">
+        <div class="product">
+            <img src="21.jpg" alt="Product 1" class="pp">
+            <h2>Product 1</h2>
+            <p>Product 1 description</p>
+        </div>
+        <div class="product">
+            <img src="22.jpg" alt="Product 2" class="pp">
+            <h2>Product 2</h2>
+            <p>Product 2 description</p>
+        </div>
+        <div class="product">
+            <img src="23.jpg" alt="Product 3" class="pp">
+            <h2>Product 3</h2>
+            <p>Product 3 description</p>
+        </div>
+        </section>
+        </body>
+</html>
