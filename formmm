@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Form</title>
+
+    <style>
+        /* General Styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 600px;
+            background-color: white;
+            padding: 20px;
+            margin: 40px auto;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        label {
+            display: block;
+            margin: 15px 0 5px;
+            color: #555;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="date"],
+        input[type="file"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            background-color: deepskyblue;
+            color: white;
+            padding: 12px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #218838;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+        .button{
+            margin : 30px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .button >button{
+            border: 0;
+            border-radius: 10px;
+            width: 250px;
+            height: 30px;
+            background-color: #027BFE;
+            color: white;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>User Registration Form</h1>
+        <form>
+            <label for="full name">Full Name :</label>
+            <input type="text" id="first name" name="Full Name" placeholder="Enter Your Full Name" required>
+
+            <label for="email">Email Address :</label>
+            <input type="email" id="email" name="Email" placeholder="Enter Your Email" required>
+
+            <label for="password">Password :</label>
+            <input type="password" id="password" name="password" placeholder="Enter a Password" required>
+
+            <label for="password1">Confirm Password :</label>
+            <input type="password" id="password1" name="password1" placeholder="Re-Enter a Password" required>
+
+            <label for="DOB">Date of Birth:</label>
+            <input type="date" id="DOB" name="DOB" required>
+
+            <label for="profile-picture">Profile-picture :</label>
+            <input type="file" id="profile-picture" name="Profile" >
+
+            <label for="msg">Comments/Feedback</label>
+            <textarea name="Message" id="msg" rows="5" cols="50" placeholder="Leave Your comments here"></textarea>
+
+        
+            <label for="subscription">Newsletter subscription</label>
+            <select id="subscription" name="subscription" required>
+                <option value="" disabled selected>Monthly</option>
+                <option value="high_school">3 Month</option>
+                <option value="bachelor">6 Month</option>
+                <option value="master">1 Year</option>
+            </select>
+            <input type="checkbox"> I agree to the <a href="#">Terms and condition</a>
+            <div class="button">
+                <button>Register</button>
+                <button>Reset</button>
+            </div>
+           
+        </form>
+    </div>
+</body>
+
+</html>
